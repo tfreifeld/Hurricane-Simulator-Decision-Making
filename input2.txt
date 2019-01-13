@@ -1,0 +1,14 @@
+#V 6
+#V 5 P2
+#V 6 P1
+#E1 1 2 W1
+#E2 2 3 W2 B0.4
+#E3 1 4 W2
+#E4 2 5 W1 B0.5
+#E5 5 3 W5
+#E6 3 6 W3
+#E7 4 5 W1 B0.01
+#E8 5 6 W3
+#Deadline 10
+#Start 1
+#Shelter 3

@@ -1,15 +1,13 @@
 package HurricaneEvacuation;
 
-import java.util.AbstractMap;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 class Vertex {
 
     private int id;
 
     private HashMap<Integer, Edge> edges;
-    private HashMap<Integer, Map.Entry<Vertex, Edge>> neighbours;
+    private Map<Edge,Vertex> neighbours;
     private int evacuees = 0;
 
     Vertex(int id) {
@@ -22,8 +20,7 @@ class Vertex {
 
         this.edges.put(edge.getId(), edge);
         Vertex neighbour = edge.getNeighbour(this);
-        neighbours.put(neighbour.getId(),
-                new AbstractMap.SimpleEntry<>(neighbour, edge));
+        neighbours.put(edge, neighbour);
 
     }
 
@@ -49,7 +46,7 @@ class Vertex {
         return String.valueOf(this.id);
     }
 
-    HashMap<Integer, Map.Entry<Vertex, Edge>> getNeighbours() {
+    Map<Edge, Vertex> getNeighbours() {
         return neighbours;
     }
 }

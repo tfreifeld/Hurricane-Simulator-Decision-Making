@@ -2,9 +2,7 @@ package HurricaneEvacuation;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 
 class Graph {
 
@@ -21,6 +19,9 @@ class Graph {
     private int deadline;
     private Vertex startVertex;
     private Vertex shelterVertex;
+
+    private List<Integer> possibleBlockedEdges = new ArrayList<>();
+    private List<Integer> evacueeVertices = new ArrayList<>();
 
     Graph(File file) {
 
@@ -78,6 +79,9 @@ class Graph {
 
             sc.skip(vertexEncoding);
             int numOfVertices = sc.nextInt();
+            if (numOfVertices > 10){
+                throw new RuntimeException("There must be 10 vertices at most.");
+            }
             for (int i = 1; i <= numOfVertices; i++) {
                 vertices.put(i, new Vertex(i));
             }
@@ -93,9 +97,16 @@ class Graph {
         sc.skip(vertexEncoding);
         int vertexNum = sc.nextInt();
         int evacuees = 0;
-        if (sc.hasNext("P")) {
+        if (sc.hasNext("P[0-9]*")) {
             sc.skip(ignoreNonDigitsRegex);
-            evacuees = sc.nextInt();
+            int read = sc.nextInt();
+            if (read > 4){
+                throw new RuntimeException("Evacuees at each node must be less than 5");
+            }
+            else {
+                evacuees = read;
+                evacueeVertices.add(vertexNum);
+            }
         }
         vertices.get(vertexNum).setEvacuees(evacuees);
     }
@@ -108,10 +119,15 @@ class Graph {
         sc.skip(ignoreNonDigitsRegex);
         int weight = sc.nextInt();
 
-        int blockedProb = 0;
-        if (sc.hasNext("B")) {
+        float blockedProb = 0;
+        if (sc.hasNext("B[0-9|.]*")) {
+            if(possibleBlockedEdges.size() == 10){
+                throw new RuntimeException("There must be 10 possible blockages at most.");
+            }
             sc.skip(ignoreNonDigitsRegex);
-            blockedProb = sc.nextInt();
+            blockedProb = sc.nextFloat();
+            possibleBlockedEdges.add(edgeNum);
+
         }
 
         Edge edge = new Edge
@@ -163,15 +179,23 @@ class Graph {
         return edges.getOrDefault(index, null);
     }
 
-    public int getDeadline() {
+    int getDeadline() {
         return deadline;
     }
 
-    public Vertex getStartVertex() {
+    Vertex getStartVertex() {
         return startVertex;
     }
 
-    public Vertex getShelterVertex() {
+    Vertex getShelterVertex() {
         return shelterVertex;
+    }
+
+    List<Integer> getPossibleBlockedEdges() {
+        return possibleBlockedEdges;
+    }
+
+    List<Integer> getEvacueeVertices() {
+        return evacueeVertices;
     }
 }
