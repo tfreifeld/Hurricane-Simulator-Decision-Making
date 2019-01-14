@@ -20,20 +20,24 @@ class Probability {
         this.probability = probability;
     }
 
+    Probability(Probability original){
+        probability = original.getProbability();
+    }
+
     double getProbability() {
         return probability;
     }
 
-    static Probability multiply(Probability a, Probability b) {
-        return new Probability(a.getProbability() * b.getProbability());
+    Probability multiply(Probability multiplier) {
+        return new Probability(this.getProbability() * multiplier.getProbability());
     }
 
     static Probability sum(Probability a, Probability b) {
         return new Probability(a.getProbability() + b.getProbability());
     }
 
-    static Probability complement(Probability a) {
-        return new Probability(1 - a.getProbability());
+    Probability complement() {
+        return new Probability(1 - this.getProbability());
     }
 
     static List<Probability> normalize(Probability a, Probability b) {

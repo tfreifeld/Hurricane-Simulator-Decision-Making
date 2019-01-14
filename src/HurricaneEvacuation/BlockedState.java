@@ -13,13 +13,13 @@ enum BlockedState {
     @Override
     public String toString() {
         if (state == 1){
-            return "True";
+            return "blocked";
         }
         else if (state == -1){
-            return "False";
+            return "open";
         }
         else{
-            return "Unknown";
+            return "unknown";
         }
     }
 
