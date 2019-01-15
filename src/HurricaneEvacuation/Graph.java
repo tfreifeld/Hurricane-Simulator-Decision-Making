@@ -79,8 +79,8 @@ class Graph {
 
             sc.skip(vertexEncoding);
             int numOfVertices = sc.nextInt();
-            if (numOfVertices > 10){
-                throw new RuntimeException("There must be 10 vertices at most.");
+            if (numOfVertices > 11){
+                throw new RuntimeException("There must be 11 vertices at most.");
             }
             for (int i = 1; i <= numOfVertices; i++) {
                 vertices.put(i, new Vertex(i));
@@ -152,32 +152,6 @@ class Graph {
         shelterVertex = vertices.get(sc.nextInt());
     }
 
-    int getNumberOfVertices() {
-
-        return vertices.size();
-
-    }
-
-    int getNumberOfEdges() {
-        return edges.size();
-    }
-
-    HashMap<Integer, Vertex> getVertices() {
-        return vertices;
-    }
-
-    HashMap<Integer, Edge> getEdges() {
-        return edges;
-    }
-
-    Vertex getVertex(int index) {
-        return vertices.getOrDefault(index, null);
-    }
-
-
-    Edge getEdge(int index) {
-        return edges.getOrDefault(index, null);
-    }
 
     int getDeadline() {
         return deadline;

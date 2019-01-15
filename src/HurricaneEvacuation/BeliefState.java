@@ -9,9 +9,8 @@ class BeliefState {
 
     private BeliefState parent;
     /* children is a mapping of target vertices to belief states resulting
-    * from the action of going to those targets*/
-    private Map<Vertex,List<BeliefState>> children = new HashMap<>();
-    private Probability probability;
+     * from the action of going to those targets (or NoOp) */
+    private Map<Vertex, Set<BeliefState>> children = new HashMap<>();
 
     /*** State variables ***/
     private Vertex location;
@@ -28,6 +27,7 @@ class BeliefState {
      * Constructor for initial state only
      */
     private BeliefState() {
+
         location = Simulator.getGraph().getStartVertex();
 
         people = new HashMap<>();
@@ -43,7 +43,6 @@ class BeliefState {
         saved = 0;
         time = 0;
 
-        probability = new Probability(1);
         parent = null;
         initChildren();
     }
@@ -62,15 +61,16 @@ class BeliefState {
         saved = original.getSaved();
         time = original.getTime();
 
-        probability = new Probability(original.getProbability());
         initChildren();
-        submitParentChild(original.getParent());
+        this.parent = original.getParent();
+        submitToParent();
 
     }
 
     /**
      * Constructor for a template for descendant states. Does not update blockedEdges and probability fully -
      * createInitialStates takes care of that.
+     * Since this is a template, and not a completed state, it does not submit children.     *
      *
      * @param parent parent state
      * @param target new location
@@ -100,28 +100,28 @@ class BeliefState {
                 carrying = 0;
             }
         }
-
-        probability = new Probability(parent.getProbability());
         this.parent = parent;
         initChildren();
     }
 
     private void initChildren() {
         children = new HashMap<>();
-        location.getNeighbours().forEach((edge, vertex) -> {
-            children.put(vertex, new ArrayList<>());
-        });
+        location.getNeighbours().forEach((edge, vertex) ->
+                children.put(vertex, new HashSet<>()));
+
+        /* A degenerate children list for action that breach the deadline */
+        children.put(location, new HashSet<>());
     }
 
     /**
-     * Submits a child state to its parent, and a parent state to its child
-     * @param parent parent state
+     * Submits a child state to its parent
      */
-    private void submitParentChild(BeliefState parent) {
+    private void submitToParent() {
 
-        this.parent = parent;
-        parent.getChildren().get(this.getLocation()).add(this);
-
+        if (!(parent == null)) {
+            /* Make sure this is not an initial state which has no parent */
+            parent.getChildren().get(this.getLocation()).add(this);
+        }
     }
 
     /**
@@ -166,31 +166,34 @@ class BeliefState {
          * states will be created.*/
 
         if (edge == null) {
+            /* If initial state */
             template = new BeliefState();
         } else {
             template = new BeliefState(parent, edge, target);
         }
 
-        Map<Integer, BlockedState> indexBlockedStateMap = new HashMap<>();
+        Map<Integer, BlockedState> unknownEdgesMap = new HashMap<>();
 
         template.getBlockedEdges().forEach((edgeId, blockedState) -> {
             if (blockedState == BlockedState.UNKNOWN)
                 if (template.getLocation().getEdges().containsKey(edgeId)) {
-                    indexBlockedStateMap.put(edgeId, BlockedState.UNKNOWN);
+                    unknownEdgesMap.put(edgeId, BlockedState.UNKNOWN);
                 }
         });
 
-        /* Now indexBlockedStateMap contains the indices
+        /* Now unknownEdgesMap contains the indices
          * of unknown possibly blocked edges incident on the new location*/
 
-        if (!indexBlockedStateMap.isEmpty()) {
+        if (!unknownEdgesMap.isEmpty()) {
+            /* If the new location is incident with unknown possibly blocked edges */
+            ArrayList<Integer> keysList = new ArrayList<>(unknownEdgesMap.keySet());
 
-            ArrayList<Integer> keysList = new ArrayList<>(indexBlockedStateMap.keySet());
-
-            fillStates(template, ans, indexBlockedStateMap,
+            fillEdgeVarsInStates(template, ans, unknownEdgesMap,
                     keysList, 0);
         } else {
             ans.add(template);
+            template.submitToParent();
+
         }
 
         return ans;
@@ -198,46 +201,37 @@ class BeliefState {
 
     /**
      * This method recursively fills a list of states based on template, with every possible
-     * true/false combination of the template state's incident unknown possibly blocked edges
+     * true/false combination of the template state's incident unknown possibly blocked edgeStateMap
      *
-     * @param template             which the final list of descendant states is based on
-     * @param stateList            the list to fill
-     * @param indexBlockedStateMap a map of edge indices to BlockedStates
-     * @param keysList             a list of keys  of indexBlockedStateMap to facilitate the process
-     * @param counter              which counts how many edges have been assigned a BlockedState. Also
-     *                             used as a stop condition.
+     * @param template     which the final list of descendant states is based on
+     * @param stateList    the list to fill
+     * @param edgeStateMap a map of edge indices to BlockedStates
+     * @param keysList     a list of keys  of edgeStateMap to facilitate the process
+     * @param counter      which counts how many edgeStateMap have been assigned a BlockedState. Also
+     *                     used as a stop condition.
      */
-    private static void fillStates(BeliefState template, List<BeliefState> stateList,
-                                   Map<Integer, BlockedState> indexBlockedStateMap,
-                                   ArrayList<Integer> keysList, int counter) {
+    private static void fillEdgeVarsInStates(BeliefState template, List<BeliefState> stateList,
+                                             Map<Integer, BlockedState> edgeStateMap,
+                                             ArrayList<Integer> keysList, int counter) {
 
-        if (counter == indexBlockedStateMap.size()) {
-            /* All edges have been given a BlockedState */
+        if (counter == edgeStateMap.size()) {
+            /* All edgeStateMap have been given a BlockedState */
+
             BeliefState newState = new BeliefState(template);
-            indexBlockedStateMap.forEach((edgeId, blockedState) -> {
-
-                newState.getBlockedEdges().replace(edgeId, blockedState);
-
-                Probability probability = newState.getLocation()
-                        .getEdges().get(edgeId).getBlockedProb();
-                if (blockedState == BlockedState.OPEN) {
-                    probability = probability.complement();
-                }
-                newState.multiplyProbability(probability);
-            });
-
+            edgeStateMap.forEach((edgeId, blockedState) ->
+                    newState.getBlockedEdges().replace(edgeId, blockedState));
 
             stateList.add(newState);
+
         } else {
-            indexBlockedStateMap.replace(keysList.get(counter), BlockedState.BLOCKED);
-            fillStates(template, stateList, indexBlockedStateMap, keysList, counter + 1);
-            indexBlockedStateMap.replace(keysList.get(counter), BlockedState.UNKNOWN);
-            indexBlockedStateMap.replace(keysList.get(counter), BlockedState.OPEN);
-            fillStates(template, stateList, indexBlockedStateMap, keysList, counter + 1);
-            indexBlockedStateMap.replace(keysList.get(counter), BlockedState.UNKNOWN);
+            edgeStateMap.replace(keysList.get(counter), BlockedState.BLOCKED);
+            fillEdgeVarsInStates(template, stateList, edgeStateMap, keysList, counter + 1);
+            edgeStateMap.replace(keysList.get(counter), BlockedState.UNKNOWN);
+            edgeStateMap.replace(keysList.get(counter), BlockedState.OPEN);
+            fillEdgeVarsInStates(template, stateList, edgeStateMap, keysList, counter + 1);
+            edgeStateMap.replace(keysList.get(counter), BlockedState.UNKNOWN);
 
         }
-
     }
 
     /**
@@ -260,7 +254,7 @@ class BeliefState {
         return location;
     }
 
-    HashMap<Integer, Boolean> getPeople() {
+    private HashMap<Integer, Boolean> getPeople() {
         return people;
     }
 
@@ -268,7 +262,7 @@ class BeliefState {
         return blockedEdges;
     }
 
-    int getCarrying() {
+    private int getCarrying() {
         return carrying;
     }
 
@@ -276,7 +270,7 @@ class BeliefState {
         return saved;
     }
 
-    int getTime() {
+    private int getTime() {
         return time;
     }
 
@@ -284,22 +278,14 @@ class BeliefState {
         return parent;
     }
 
-    Map<Vertex, List<BeliefState>> getChildren() {
+    Map<Vertex, Set<BeliefState>> getChildren() {
         return children;
     }
 
-    Probability getProbability() {
-        return probability;
-    }
-
-
-    private void multiplyProbability(Probability multiplier) {
-        probability = probability.multiply(multiplier);
-    }
 
     @Override
     public String toString() {
-        return "{probability: " + probability + ", location: " + location + ", people: " + people + ", edges: "
+        return "{location: " + location + ", people: " + people + ", edges: "
                 + blockedEdges + ", carrying: " + carrying + ", saved: " + saved + ", time: "
                 + time + "}";
     }
@@ -321,5 +307,9 @@ class BeliefState {
                     saved == ((BeliefState) obj).getSaved() &&
                     time == ((BeliefState) obj).getTime();
         }
+    }
+
+    boolean isTerminal() {
+        return time == Simulator.getGraph().getDeadline();
     }
 }
