@@ -1,0 +1,563 @@
+This file contains a detailed description only of states which are relevant to the agent's actions in the optimal policy.
+
+State: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=unknown}, carrying: 0, saved: 0, time: 0}
+
+     Possible actions: 
+         Go to 4:
+             Resulting states:
+             {
+                 State: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 2}
+                 Probability: 0.01
+                 Utility: 0.6
+
+                 State: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 2}
+                 Probability: 0.99
+                 Utility: 3
+
+             }
+             Utility: 2.976
+
+         Go to 2:
+             Resulting states:
+             {
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 1}
+                 Probability: 0.2
+                 Utility: 1.98
+
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 1}
+                 Probability: 0.2
+                 Utility: 3
+
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 1}
+                 Probability: 0.3
+                 Utility: 1.98
+
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 1}
+                 Probability: 0.3
+                 Utility: 3
+
+             }
+             Utility: 2.49
+
+     Chosen action: Go to vertex 4
+     Utility: 2.976
+
+State: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 2}
+
+     Possible actions: 
+         Go to 1:
+             Resulting states:
+             {
+                 State: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 4}
+                 Probability: 1
+                 Utility: 0.6
+
+             }
+             Utility: 0.6
+
+     Chosen action: Go to vertex 1
+     Utility: 0.6
+
+State: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 4}
+
+     Possible actions: 
+         Go to 4:
+             Resulting states:
+             {
+                 State: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 2:
+             Resulting states:
+             {
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 5}
+                 Probability: 0.2
+                 Utility: 0
+
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 5}
+                 Probability: 0.2
+                 Utility: 0
+
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 5}
+                 Probability: 0.3
+                 Utility: 0
+
+                 State: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 5}
+                 Probability: 0.3
+                 Utility: 2
+
+             }
+             Utility: 0.6
+
+     Chosen action: Go to vertex 2
+     Utility: 0.6
+
+State: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 5}
+
+     Possible actions: 
+         Go to 1:
+             Resulting states:
+             {
+                 State: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+     Chosen action: NoOp
+     Utility: 0
+
+State: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 5}
+
+     Possible actions: 
+         Go to 1:
+             Resulting states:
+             {
+                 State: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 5:
+             Resulting states:
+             {
+                 State: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+     Chosen action: NoOp
+     Utility: 0
+
+State: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 5}
+
+     Possible actions: 
+         Go to 1:
+             Resulting states:
+             {
+                 State: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 7}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+     Chosen action: NoOp
+     Utility: 0
+
+State: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 5}
+
+     Possible actions: 
+         Go to 1:
+             Resulting states:
+             {
+                 State: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 5:
+             Resulting states:
+             {
+                 State: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 2
+
+             }
+             Utility: 2
+
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 7}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+     Chosen action: Go to vertex 5
+     Utility: 2
+
+State: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}
+
+     Possible actions: 
+         Go to 5:
+             Resulting states:
+             {
+                 State: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 2:
+             Resulting states:
+             {
+                 State: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 7}
+                 Probability: 1
+                 Utility: 2
+
+             }
+             Utility: 2
+
+         Go to 6:
+             Resulting states:
+             {
+                 State: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 9}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+     Chosen action: Go to vertex 2
+     Utility: 2
+
+State: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 7}
+
+     Possible actions: 
+         Go to 1:
+             Resulting states:
+             {
+                 State: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 5:
+             Resulting states:
+             {
+                 State: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 9}
+                 Probability: 1
+                 Utility: 2
+
+             }
+             Utility: 2
+
+     Chosen action: Go to vertex 3
+     Utility: 2
+
+State: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 9}
+
+     Possible actions: 
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}
+                 Probability: 1
+                 Utility: 2
+
+             }
+             Utility: 2
+
+     Chosen action: Go to vertex 3
+     Utility: 2
+
+State: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}
+
+     Terminal state
+     Utility: 2
+
+State: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 2}
+
+     Possible actions: 
+         Go to 1:
+             Resulting states:
+             {
+                 State: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 4}
+                 Probability: 1
+                 Utility: 0.6
+
+             }
+             Utility: 0.6
+
+         Go to 5:
+             Resulting states:
+             {
+                 State: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 3}
+                 Probability: 0.5
+                 Utility: 3
+
+                 State: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 3}
+                 Probability: 0.5
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 5
+     Utility: 3
+
+State: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 3}
+
+     Possible actions: 
+         Go to 4:
+             Resulting states:
+             {
+                 State: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 4}
+                 Probability: 1
+                 Utility: 2
+
+             }
+             Utility: 2
+
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 8}
+                 Probability: 0.4
+                 Utility: 2
+
+                 State: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 8}
+                 Probability: 0.6
+                 Utility: 2
+
+             }
+             Utility: 2
+
+         Go to 6:
+             Resulting states:
+             {
+                 State: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 6
+     Utility: 3
+
+State: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 6}
+
+     Possible actions: 
+         Go to 5:
+             Resulting states:
+             {
+                 State: {location: 5, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 9}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 9}
+                 Probability: 0.4
+                 Utility: 3
+
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 9}
+                 Probability: 0.6
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 3
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 9}
+
+     Possible actions: 
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 10}
+                 Probability: 1
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 3
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 10}
+
+     Terminal state
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 9}
+
+     Possible actions: 
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 10}
+                 Probability: 1
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 3
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 10}
+
+     Terminal state
+     Utility: 3
+
+State: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 3}
+
+     Possible actions: 
+         Go to 4:
+             Resulting states:
+             {
+                 State: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}
+                 Probability: 1
+                 Utility: 2
+
+             }
+             Utility: 2
+
+         Go to 2:
+             Resulting states:
+             {
+                 State: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}
+                 Probability: 0.4
+                 Utility: 2
+
+                 State: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}
+                 Probability: 0.6
+                 Utility: 2
+
+             }
+             Utility: 2
+
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 2, time: 8}
+                 Probability: 0.4
+                 Utility: 2
+
+                 State: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 8}
+                 Probability: 0.6
+                 Utility: 2
+
+             }
+             Utility: 2
+
+         Go to 6:
+             Resulting states:
+             {
+                 State: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 6}
+                 Probability: 1
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 6
+     Utility: 3
+
+State: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 6}
+
+     Possible actions: 
+         Go to 5:
+             Resulting states:
+             {
+                 State: {location: 5, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}
+                 Probability: 1
+                 Utility: 0
+
+             }
+             Utility: 0
+
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 3, time: 9}
+                 Probability: 0.4
+                 Utility: 3
+
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 9}
+                 Probability: 0.6
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 3
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 3, time: 9}
+
+     Possible actions: 
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 3, time: 10}
+                 Probability: 1
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 3
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 3, time: 10}
+
+     Terminal state
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 9}
+
+     Possible actions: 
+         Go to 3:
+             Resulting states:
+             {
+                 State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 10}
+                 Probability: 1
+                 Utility: 3
+
+             }
+             Utility: 3
+
+     Chosen action: Go to vertex 3
+     Utility: 3
+
+State: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 10}
+
+     Terminal state
+     Utility: 3
+

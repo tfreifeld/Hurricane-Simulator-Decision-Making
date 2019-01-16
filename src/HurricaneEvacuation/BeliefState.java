@@ -10,7 +10,7 @@ class BeliefState {
     private BeliefState parent;
     /* children is a mapping of target vertices to belief states resulting
      * from the action of going to those targets (or NoOp) */
-    private Map<Vertex, List<BeliefState>> children = new HashMap<>();
+    private Map<Vertex, Set<BeliefState>> children = new HashMap<>();
 
     /*** State variables ***/
     private Vertex location;
@@ -107,10 +107,10 @@ class BeliefState {
     private void initChildren() {
         children = new HashMap<>();
         location.getNeighbours().forEach((edge, vertex) ->
-                children.put(vertex, new LinkedList<>()));
+                children.put(vertex, new HashSet<>()));
 
         /* A degenerate children list for action that breach the deadline */
-        children.put(location, new LinkedList<>());
+        children.put(location, new HashSet<>());
     }
 
     /**
@@ -278,7 +278,7 @@ class BeliefState {
         return parent;
     }
 
-    Map<Vertex, List<BeliefState>> getChildren() {
+    Map<Vertex, Set<BeliefState>> getChildren() {
         return children;
     }
 

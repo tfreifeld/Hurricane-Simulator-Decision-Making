@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Hurricane-Simulator-Decision-Making.iml" filepath="$PROJECT_DIR$/Hurricane-Simulator-Decision-Making.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hurricane-Simulator-Decision-Making.iml" filepath="$PROJECT_DIR$/.idea/Hurricane-Simulator-Decision-Making.iml" />
     </modules>
   </component>
 </project>

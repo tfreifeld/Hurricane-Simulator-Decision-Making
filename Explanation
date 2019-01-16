@@ -6,3 +6,7 @@ which are given the number of people saved by the agent as utility.
 The Value Iteration algorithm is run until there are no more
 efficient Bellman updates - updates where a utility was changed
 for some belief state.
+The program creates two files "optimalPath.txt" and "beliefSpace.txt":
+The first gives a detailed description of the states relevant to the
+optimal policy, and the second lists every state generated when
+developing the belief space.

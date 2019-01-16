@@ -1,0 +1,447 @@
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=unknown}, carrying: 0, saved: 0, time: 0}, ACTION: Go to vertex 4, UTILITY: 2.976
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 2}, ACTION: Go to vertex 1, UTILITY: 0.6
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 4}, ACTION: Go to vertex 2, UTILITY: 0.6
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 1, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 5}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 1, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 7}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 2}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 4}, ACTION: Go to vertex 4, UTILITY: 0.6
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: Go to vertex 5, UTILITY: 0.6
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=unknown, 4=unknown, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: Go to vertex 2, UTILITY: 1.2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 1, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 5}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 1, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 6}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 9}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 9}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 2, UTILITY: 1.2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=unknown, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 6}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 3, time: 9}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 9}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 2, UTILITY: 1.2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=unknown, 4=open, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 5, UTILITY: 1.2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=unknown, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 6}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 4, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 1, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 1, saved: 2, time: 9}, ACTION: Go to vertex 6, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 1, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 1}, ACTION: Go to vertex 1, UTILITY: 1.98
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 2}, ACTION: Go to vertex 4, UTILITY: 1.98
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 3}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 1}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 2}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 7}, ACTION: Go to vertex 6, UTILITY: 2
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 1, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 3, time: 8}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 7}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 2}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 2, time: 7}, ACTION: Go to vertex 6, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 1, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 3, time: 8}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=blocked, 4=open, 7=open}, carrying: 3, saved: 0, time: 7}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 2}, ACTION: Go to vertex 2, UTILITY: 3
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=blocked, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 1}, ACTION: Go to vertex 1, UTILITY: 1.98
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 3}, ACTION: Go to vertex 6, UTILITY: 1
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 1, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 2, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 1, saved: 0, time: 6}, ACTION: Go to vertex 3, UTILITY: 1
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=false}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 1, time: 9}, ACTION: Go to vertex 3, UTILITY: 1
+STATE: {location: 3, people: {5=true, 6=false}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 1, time: 10}, ACTION: NoOp, UTILITY: 1
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 2}, ACTION: Go to vertex 4, UTILITY: 1.98
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=blocked, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 3}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 1, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=unknown}, carrying: 0, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=blocked, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 1}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 3}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 5}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=open, 7=unknown}, carrying: 1, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 7}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=open, 7=unknown}, carrying: 1, saved: 0, time: 6}, ACTION: Go to vertex 3, UTILITY: 1
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=true, 6=false}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 1, time: 9}, ACTION: Go to vertex 3, UTILITY: 1
+STATE: {location: 3, people: {5=true, 6=false}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 1, time: 10}, ACTION: NoOp, UTILITY: 1
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 2}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 7}, ACTION: Go to vertex 6, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 1, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 1, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 3, time: 8}, ACTION: Go to vertex 2, UTILITY: 3
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 5}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 7}, ACTION: Go to vertex 1, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 4, UTILITY: 2
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 2, time: 10}, ACTION: NoOp, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 1, saved: 2, time: 8}, ACTION: Go to vertex 6, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=blocked}, carrying: 3, saved: 0, time: 7}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 2, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 2}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 7}, ACTION: Go to vertex 6, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 1, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 9}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 10}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 3, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 8}, ACTION: Go to vertex 2, UTILITY: 3
+STATE: {location: 2, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 3, time: 10}, ACTION: NoOp, UTILITY: 3
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 6, UTILITY: 3
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 3, saved: 0, time: 7}, ACTION: Go to vertex 3, UTILITY: 3
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 1, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 5}, ACTION: Go to vertex 3, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 6}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 3, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 5}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 2, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 7}, ACTION: Go to vertex 1, UTILITY: 2
+STATE: {location: 5, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 4, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 9}, ACTION: Go to vertex 4, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 2, time: 8}, ACTION: Go to vertex 4, UTILITY: 2
+STATE: {location: 6, people: {5=false, 6=false}, edges: {2=open, 4=open, 7=open}, carrying: 1, saved: 2, time: 8}, ACTION: Go to vertex 6, UTILITY: 2
+STATE: {location: 1, people: {5=false, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 2, saved: 0, time: 4}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 2}, ACTION: Go to vertex 2, UTILITY: 3
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 4}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 4}, ACTION: Go to vertex 5, UTILITY: 2
+STATE: {location: 2, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 3}, ACTION: Go to vertex 5, UTILITY: 3
+STATE: {location: 3, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 5}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 6, people: {5=true, 6=false}, edges: {2=open, 4=open, 7=unknown}, carrying: 1, saved: 0, time: 8}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 1, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=unknown}, carrying: 0, saved: 0, time: 4}, ACTION: Go to vertex 2, UTILITY: 2
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=blocked}, carrying: 0, saved: 0, time: 6}, ACTION: NoOp, UTILITY: 0
+STATE: {location: 4, people: {5=true, 6=true}, edges: {2=open, 4=open, 7=open}, carrying: 0, saved: 0, time: 6}, ACTION: Go to vertex 5, UTILITY: 2

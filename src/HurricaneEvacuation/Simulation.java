@@ -1,9 +1,6 @@
 package HurricaneEvacuation;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 class Simulation {
 
@@ -17,7 +14,7 @@ class Simulation {
     private Simulation() {
         randomBlockages();
         if(shouldPrint) printBlockedEdges();
-        findNextState(Main.getInitialStates());
+        findNextState(new HashSet<>(Main.getInitialStates()));
         if(shouldPrint) printAgentStatus();
 
         givenUp = false;
@@ -28,6 +25,7 @@ class Simulation {
 
         while (!state.isTerminal() && !givenUp) {
             Vertex newLocation = Main.getStateUtilityMap().get(state).getActionDst();
+
             findNextState(state.getChildren().get(newLocation));
             if(!givenUp && shouldPrint) {
                 System.out.println("Go to vertex " + state.getLocation().getId());
@@ -39,7 +37,7 @@ class Simulation {
         }
     }
 
-    private void findNextState(List<BeliefState> states) {
+    private void findNextState(Set<BeliefState> states) {
 
         if(states == null){
             if(shouldPrint) System.out.println("The agent has given up.");
