@@ -1,0 +1,8 @@
+The method used in the algorithm is Value Iteration.
+The belief state is created (only reachable states), with
+each state given initially a utility of zero,
+except terminal states (those who reached the deadline only)
+which are given the number of people saved by the agent as utility.
+The Value Iteration algorithm is run until there are no more
+efficient Bellman updates - updates where a utility was changed
+for some belief state.
