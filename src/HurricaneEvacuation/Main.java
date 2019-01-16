@@ -9,11 +9,11 @@ import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class Simulator {
+public class Main {
 
     private static Graph graph;
 
-    private static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
     private static Map<BeliefState, Optimal> stateUtilityMap = new LinkedHashMap<>();
     private static List<BeliefState> initialStates = new LinkedList<>();
 
@@ -28,6 +28,17 @@ public class Simulator {
         valueIteration();
         writeBeliefSpaceToFile();
         writeOptimalPathToFile();
+        System.out.println("Welcome!");
+        System.out.println("Please choose:");
+        System.out.println("(a) Separate simulations");
+        System.out.println("(b) 10,000 simulations");
+        if(sc.next("[a|b]").equals("a")){
+
+            Simulation.makeSimulation();
+        }
+        else {
+            Simulation.runTenThousand();
+        }
 
 
         sc.close();
@@ -257,14 +268,24 @@ public class Simulator {
         }
     }
 
+
     static Graph getGraph() {
         return graph;
+    }
+
+    static List<BeliefState> getInitialStates() {
+        return initialStates;
+    }
+
+    static Map<BeliefState, Optimal> getStateUtilityMap() {
+        return stateUtilityMap;
     }
 
     /**
      * A simple class containing a utility and optimal action (in a form of vertex destination)
      */
     static class Optimal {
+
 
         private double utility;
         private Vertex actionDst;

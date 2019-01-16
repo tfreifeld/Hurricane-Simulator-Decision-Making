@@ -165,6 +165,10 @@ class Graph {
         return shelterVertex;
     }
 
+    HashMap<Integer, Edge> getEdges() {
+        return new HashMap<>(edges);
+    }
+
     List<Integer> getPossibleBlockedEdges() {
         return possibleBlockedEdges;
     }
@@ -172,4 +176,5 @@ class Graph {
     List<Integer> getEvacueeVertices() {
         return evacueeVertices;
     }
+
 }

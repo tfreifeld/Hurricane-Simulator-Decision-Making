@@ -34,6 +34,6 @@ class Probability {
 
     @Override
     public String toString() {
-        return String.valueOf(Simulator.decimalFormat.format(probability));
+        return String.valueOf(Main.decimalFormat.format(probability));
     }
 }

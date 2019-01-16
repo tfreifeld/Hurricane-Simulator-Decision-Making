@@ -10,7 +10,7 @@ class BeliefState {
     private BeliefState parent;
     /* children is a mapping of target vertices to belief states resulting
      * from the action of going to those targets (or NoOp) */
-    private Map<Vertex, Set<BeliefState>> children = new HashMap<>();
+    private Map<Vertex, List<BeliefState>> children = new HashMap<>();
 
     /*** State variables ***/
     private Vertex location;
@@ -28,15 +28,15 @@ class BeliefState {
      */
     private BeliefState() {
 
-        location = Simulator.getGraph().getStartVertex();
+        location = Main.getGraph().getStartVertex();
 
         people = new HashMap<>();
-        Simulator.getGraph().getEvacueeVertices().forEach(
+        Main.getGraph().getEvacueeVertices().forEach(
                 vertexId -> people.put(vertexId, true)
         );
 
         blockedEdges = new HashMap<>();
-        Simulator.getGraph().getPossibleBlockedEdges().forEach(
+        Main.getGraph().getPossibleBlockedEdges().forEach(
                 edgeId -> blockedEdges.put(edgeId, BlockedState.UNKNOWN));
 
         carrying = 0;
@@ -80,11 +80,11 @@ class BeliefState {
         initializeFromParent(parent);
         time = parent.getTime() + edge.getWeight();
 
-        if (time > Simulator.getGraph().getDeadline()) {
+        if (time > Main.getGraph().getDeadline()) {
             /* If an attempt is made to cross an edge which breaches the deadline,
              * the new state will be identical to its parent, except the time will
              * be equal to the deadline. */
-            time = Simulator.getGraph().getDeadline();
+            time = Main.getGraph().getDeadline();
 
         } else {
 
@@ -95,7 +95,7 @@ class BeliefState {
                 carrying += target.getEvacuees();
             }
 
-            if (location.equals(Simulator.getGraph().getShelterVertex())) {
+            if (location.equals(Main.getGraph().getShelterVertex())) {
                 saved += carrying;
                 carrying = 0;
             }
@@ -107,10 +107,10 @@ class BeliefState {
     private void initChildren() {
         children = new HashMap<>();
         location.getNeighbours().forEach((edge, vertex) ->
-                children.put(vertex, new HashSet<>()));
+                children.put(vertex, new LinkedList<>()));
 
         /* A degenerate children list for action that breach the deadline */
-        children.put(location, new HashSet<>());
+        children.put(location, new LinkedList<>());
     }
 
     /**
@@ -131,7 +131,7 @@ class BeliefState {
      */
     static List<BeliefState> createInitialStates() {
 
-        return createStates(null, null, Simulator.getGraph().getStartVertex());
+        return createStates(null, null, Main.getGraph().getStartVertex());
     }
 
     /**
@@ -262,7 +262,7 @@ class BeliefState {
         return blockedEdges;
     }
 
-    private int getCarrying() {
+    int getCarrying() {
         return carrying;
     }
 
@@ -270,7 +270,7 @@ class BeliefState {
         return saved;
     }
 
-    private int getTime() {
+    int getTime() {
         return time;
     }
 
@@ -278,7 +278,7 @@ class BeliefState {
         return parent;
     }
 
-    Map<Vertex, Set<BeliefState>> getChildren() {
+    Map<Vertex, List<BeliefState>> getChildren() {
         return children;
     }
 
@@ -310,6 +310,6 @@ class BeliefState {
     }
 
     boolean isTerminal() {
-        return time == Simulator.getGraph().getDeadline();
+        return time == Main.getGraph().getDeadline();
     }
 }
